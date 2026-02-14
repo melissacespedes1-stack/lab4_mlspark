@@ -1,5 +1,6 @@
 # Presentado por:
 *Ingrid Melissa Céspedes Díaz*
+
 *Maria Fernanda Torres Ortiz*
 
 # Taller 4: Machine Learning Escalable con Spark ML
