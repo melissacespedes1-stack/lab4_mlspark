@@ -120,8 +120,8 @@ Posteriormente, se cargó el dataset de features correspondiente al problema de 
 A continuación, se ejecutaron tres experimentos adicionales utilizando modelos regularizados: **Ridge (L2)**, **Lasso (L1)** y **ElasticNet**. Para cada uno de estos modelos se registraron métricas de desempeño como **RMSE**, **MAE** y **R²**, además de almacenar los modelos entrenados como artefactos dentro de MLflow.
 
 Finalmente, se compararon todos los runs directamente desde la interfaz gráfica de MLflow en `localhost:5000`, lo que permitió analizar visualmente las diferencias de desempeño entre los distintos enfoques. Como complemento, se creó un run adicional que incluyó **artefactos personalizados**, entre ellos un archivo de reporte en texto (`model_report.txt`) con un resumen del experimento y sus resultados.
-  
-  - gráfico real vs predicho (`predictions_vs_real.png`)
+
+Adicionalmente, se generó y se guardó un **gráfico de valores reales vs valores predichos** (`predictions_vs_real.png`), el cual permite evaluar visualmente qué tan bien el modelo logra aproximar los valores reales del contrato.
 
 **Qué se obtuvo**
 - Experimento con runs comparables en MLflow UI.
