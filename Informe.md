@@ -24,4 +24,7 @@ Se trabajó con un entorno contenerizado para garantizar reproducibilidad:
 
 - **Spark Master/Worker** (ejecución distribuida)  
 - **Jupyter Lab** (ejecución de notebooks)  
-- **MLflow Tracking Server** (tracking de experimentos)  
+- **MLflow Tracking Server** (tracking de experimentos)
+
+- <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/104c8d83-5a3b-4168-b8a7-4fa1c015bb62" />
+
