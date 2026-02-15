@@ -26,40 +26,6 @@ Se trabajó con un entorno contenerizado para garantizar reproducibilidad:
 - **Jupyter Lab** (ejecución de notebooks)  
 - **MLflow Tracking Server** (tracking de experimentos)
 
-## Estructura del Proyecto
-
-lab4_mlspark/
-├── README.md
-├── docker-compose.yml
-├── Dockerfile
-├── requirements.txt
-├── .gitignore
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── notebooks/
-│   ├── 01_ingesta_datos.py
-│   ├── 02_exploracion_eda.py
-│   ├── 03_feature_engineering.py
-│   ├── 04_transformaciones.py
-│   ├── 05_regresion_lineal.py
-│   ├── 06_regresion_logistica.py
-│   ├── 07_regularizacion.py
-│   ├── 08_validacion_cruzada.py
-│   ├── 09_optimizacion_hiperparametros.py
-│   ├── 10_mlflow_tracking.py
-│   ├── 11_model_registry.py
-│   └── 12_inferencia_produccion.py
-│
-├── src/
-│   ├── __init__.py
-│   ├── data_loader.py
-│   ├── feature_utils.py
-│   └── model_trainer.py
-│
-└── mlruns/
 
 ## Fase 1: Ingesta y Exploracion
 
