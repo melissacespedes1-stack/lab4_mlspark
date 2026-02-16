@@ -30,7 +30,7 @@ Se trabajó con un entorno contenerizado para garantizar reproducibilidad:
 ## Fase 1: Ingesta y Exploracion
 
 # Notebook 01: Ingesta de Datos
-En este primer notebook se realizó el proceso de ingesta y preparación inicial de los datos. Para ello, se configuró una **SparkSession** conectada al clúster (`spark://spark-master:7077`) con el fin de trabajar en un entorno distribuido. Posteriormente, se descargaron **100.000 registros** del dataset de **SECOP II** a través de la API de Datos Abiertos (Socrata), aplicando un filtro por fecha de firma correspondiente al año 2025.
+En este primer notebook se realizó el proceso de ingesta y preparación inicial de los datos. Para ello, se configuró una **SparkSession** conectada al clúster (`spark://spark-master:7077`) con el fin de trabajar en un entorno distribuido. Posteriormente, se descargaron **100.000 registros** del dataset de **SECOP II** a través de la API de Datos Abiertos (Socrata), aplicando un filtro por fecha de firma correspondiente a un año que va desde el 01/01/2025 al 01/01/2026.
 
 La información obtenida se almacenó en formato **JSON línea por línea** en la ruta `/opt/spark-data/raw/secop_contratos.json`. A continuación, este archivo fue leído con Spark, se exploró su esquema y se normalizaron los nombres de las columnas para facilitar su uso posterior. También se realizó el casteo de tipos de datos, convirtiendo fechas a formato *timestamp*, montos a *double* y variables de duración a tipo *entero*, además de seleccionar únicamente las columnas relevantes para el análisis y el modelado.
 
